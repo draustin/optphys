@@ -70,7 +70,7 @@ def test_time_and_freq_stacked(qtbot):
                                      legend={'domain': 'time', 'type': 'phase'})
     plt.set_pulse(0, t=t, Et=Et, omega=omega, Ef=Ef, name='the name', pen='b')
     if qtbot is not None:
-        qtbot.addWidget(plt)
+        qtbot.addWidget(plt.glw)
     return plt
 
 
